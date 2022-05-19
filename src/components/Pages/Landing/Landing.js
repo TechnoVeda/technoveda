@@ -13,13 +13,25 @@ export default function Landing() {
           <h1 className="text-center"> Get yourself Diagnosed for free with us.</h1>
           <button
             type="button"
-            // className="btn btn-light need-blood-btn"
+            className="btn btn-light need-blood-btn"
             
           >
           <Link to="/diseases" className="btn btn-light need-blood-btn">
             Click to get Diagnosed
             </Link>
           </button>
+            <div>
+            <button
+              type="button"
+              className="btn btn-light need-blood-btn"
+            // id="pat-detail"
+            >
+
+              <Link to="/patient-detail" className="btn btn-light need-blood-btn">
+                Patient Details
+              </Link>
+            </button>
+          </div>
         </div>
       </div>
       <div className="features">
