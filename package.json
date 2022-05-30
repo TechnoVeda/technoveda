@@ -1,5 +1,6 @@
 {
   "name": "technoveda",
+  "homepage": "https://technoveda.github.io/technoveda",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://techno-vedha.herokuapp.com",
@@ -18,6 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "start-flask-api": "cd api && venv/bin/flask run",
     "build": "react-scripts build",
